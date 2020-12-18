@@ -7,7 +7,7 @@ set -e
 apk update
 
 # install pg_dump
-apk add postgresql
+apk add postgresql --repository=http://dl-cdn.alpinelinux.org/alpine/v3.11/main
 
 # install s3 tools
 apk add python py2-pip
